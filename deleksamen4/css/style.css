@@ -1,0 +1,680 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html {
+    font-size: calc(1em + 1vw);
+}
+
+/*Her kommer CSS-egenskapene som er egnet for mobil-versjon/skjermer under 768px*/
+
+.table-container {
+	border: 1px solid gray;
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 20px;
+    background-color: #f9f9f9;
+}
+
+#header-uu {
+	display: none;
+}
+
+.header-four-column-table {
+    display:none;
+}
+
+.item-title {
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+    line-height:150%;
+}
+
+.content {
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.content-four-column-table {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.group1 {
+	background-color: #9EE5A1;
+    border: 1px solid grey;
+
+}
+
+.group2 {
+    background-color: #FFC7C0;
+    border: 1px solid grey;
+    
+}
+
+.group3 {
+    background-color: #FECF48;
+    border: 1px solid grey;
+    
+}
+body {
+    width: 95%;
+    margin: 0 auto;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.main-container {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+    grid-template-columns: 1fr;
+    font-size: 0.7rem;
+}
+
+header {
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_960_720.jpg);
+    /*Hentet fra: https://pixabay.com/illustrations/banner-header-hand-made-paper-1709772/*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.5rem;
+}
+
+#logo {
+    max-height: 3rem;
+    max-width: 3rem;
+    margin-top: 0;
+    margin-left: 0;
+}
+nav ul {
+    display: none;
+}
+
+.drop-down-meny {
+    overflow: hidden;
+    background-color: #d6d7d9;
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 20px;
+    border-radius: 0.7rem;
+  }
+
+.drop-down-meny #links {
+    display: none;
+  }
+
+.drop-down-meny:hover #links {
+    display: block;
+}
+
+.drop-down-meny a {
+    color: #212121;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+.drop-down-meny a:hover {
+    background-color: white;
+  }
+
+.active {
+  color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size:1rem;
+    width: 10rem;
+    color: #212121;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact-button {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 8.5px;
+    padding: 8px;
+    width: 75px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 2.5px;
+    /*Slenge på en transitiion 0.2?? Sjekk opp*/
+   }
+/*Lånt deler og hentet inspirasjon fra: https://uiverse.io/detail/NorthFishHasNa/soft-turtle-49 by @NorthFishHasNa*/
+
+main {
+    grid-area: main;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+    gap:0.5rem;
+    line-height:150%;
+}
+
+.subpage-main-container {
+    line-height:150%;
+}
+
+.subpage-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.subpage-h3 {
+    font-size:1em;
+    text-decoration: underline;
+}
+
+#subpage-quote {
+    font-style:italic;
+}
+
+.article-sources {
+    font-size: 0.8em;
+    padding: 1rem;
+    font-style: normal;
+    border-top: 1px solid #3d405b;
+    margin-bottom: 3rem;
+    list-style-type: none;
+}
+
+#intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+article {
+    margin: 10px;
+}
+
+.article-image-front-page {
+    margin:auto;
+    display:block;
+    max-width: 250px;
+    max-height: 250px;
+}
+.analyse-images-container {
+    background-color: #fa0909;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:1em;
+    padding:1rem;
+    
+}
+.analyse-images {
+    max-width:75%;
+    max-height:65%;
+    
+}
+/*CSS tilhørende kontaktskjema - kontakt oss*/
+#contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+
+}
+#contact-info {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    
+}
+#contact-form {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: #f9f9f9;
+}
+#contact-form ul {
+    list-style:none;
+    color:black;
+    max-width: 400px;
+}
+#contact-form label {
+    display:block;
+    font-weight: bold;
+    margin:0 0 3px 0;
+}
+#contact-form-text-box {
+    width:400px;
+    height: 300px;
+}
+#contact-map {
+    display:grid;
+    justify-content: baseline;
+}
+/*CSS tilhørende kontaktskjema - kontakt oss slutt*/
+footer {
+    grid-area: footer;
+    font-size: 0.5rem;
+    color: #212121;
+    margin-top: 1rem;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_960_720.jpg);
+    /*Hentet fra: https://pixabay.com/illustrations/banner-header-hand-made-paper-1709772/*/
+    background-size: cover;
+    background-position: center;
+}
+
+footer a {
+    color: #212121;
+}
+
+footer h4 {
+    margin-left:0.5rem;
+}
+
+/* Her kommer CSS-egenskapene som er egnet for tablets o.l med skjermoppløsning 768-1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/*Responsiv tabell - tablets*/
+.table-row-uu {
+	display: grid;
+	grid-template-columns: .7fr 1.1fr;
+	margin-top: 20px;
+    background-color: #f9f9f9;
+}
+.table-row-four-columns {
+    display: grid;
+	grid-template-columns: .7fr 1.1fr;
+	margin-top: 20px;
+    background-color: #f9f9f9;
+}
+.item-title {
+	font-size: 18px;
+}
+.analyse-images-container {
+    background-color: #6519f1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+    
+}
+.analyse-images {
+    width:32%;
+}
+	/* body {
+    width: 90%;
+    margin: 0 auto;
+}
+.drop-down-meny {
+    display: none;
+} */
+}
+/* TO BE CONTINUED DELEKSAMEN 4! */
+
+
+/*Her kommer CSS-egenskapene som er egnet for desktop/skjerm med oppløsning høyere enn 1025px*/
+@media only screen and (min-width: 1025px) {
+
+/*Responsiv tabell - desktop*/
+
+#header-uu {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 20px;
+}
+
+.header-titles {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.small-title {
+display: none
+}
+
+.content {
+grid-template-rows: 1fr;
+grid-template-columns: 1fr 1fr;
+}
+
+.table-row-uu {
+	display: grid;
+	grid-template-columns: .5fr 1fr;
+    background-color: #f9f9f9;
+	
+}
+
+.item-title {
+    display: flex;
+    align-items: center;
+    line-height: 150%;
+}
+
+.header-four-column-table {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 20px;
+}
+.table-row-four-columns {
+	display: grid;
+	grid-template-columns: .3fr 1fr;
+    background-color: #f9f9f9;
+	
+}
+.content-four-column-table {
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.group1 {
+	background-color: #9EE5A1;
+    border: 1px solid black;
+
+}
+
+.group2 {
+    background-color: #FFC7C0;
+    border: 1px solid black;
+}
+
+.group3 {
+    background-color: #FECF48;
+    border: 1px solid black;
+}
+body {
+        width: 85%;
+        margin: 0 auto;
+        font-family: 'Open Sans';
+        font-weight: 400;
+    }
+/*Responsiv tabell - desktop slutt */
+/*Main-container-mal*/
+.main-container {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    font-size: 0.5rem;
+    line-height: 150%;
+    min-height: 100vh;
+}
+/*Main-container-mal*/
+/*Header + logo*/
+header {
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    height: 250px;
+    align-items: baseline;
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/02/15/45/banner-1709772_960_720.jpg);
+    /*Hentet fra: https://pixabay.com/illustrations/banner-header-hand-made-paper-1709772/*/
+    background-position: center;
+    border-radius: 0.5rem;
+}
+
+#logo {
+    max-height: 5rem;
+    max-width: 4rem;
+    margin-top: 0;
+    margin-left: 0;
+}
+/*Header + logo slutt*/
+/*Generell overskrifter*/
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    width: 8rem;
+    color:#212121;
+}
+h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+/*Generell overskrifter slutt*/
+/*Navigasjon css*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 1.5rem;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li a {
+    color:#212121;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 0.5rem;
+}
+
+a:hover {
+    color:orangered;
+    text-decoration:underline;
+}
+
+.drop-down-meny {
+    display: none;
+}
+/*Navigasjon css slutt*/
+main {
+    grid-area: main;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+    gap:1rem;
+}
+
+.subpage-main-container {
+    line-height:150%;
+
+}
+
+.subpage-h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight:400;
+    display:flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
+
+.subpage-h3 {
+    font-size:1em;
+    text-decoration: underline;
+}
+
+#subpage-quote {
+    font-style:italic;
+}
+
+.article-sources {
+    font-size: 0.7em;
+    font-style: normal;
+    border-top: 1px solid #3d405b;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    list-style-type: none;
+}
+
+#table-description {
+    display:flex;
+    justify-content: center;
+    font-style: italic;
+}
+/*Introduksjon forside*/
+#intro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+#contact-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+    /*Lånt deler og hentet inspirasjon fra: https://uiverse.io/detail/NorthFishHasNa/soft-turtle-49 by @NorthFishHasNa*/
+/*Introduksjon forside slutt*/
+section {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+article {
+    margin: 25px;
+}
+
+article:last-child {
+    margin-right: 0;
+}
+
+.article-image-front-page {
+    width: 100%;
+    height: 400px;
+}
+/*CSS tilhørende kontaktskjema - kontakt oss*/
+#contact-info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+
+}
+#contact-info {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    
+}
+#contact-form {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    background-color: #f9f9f9;
+}
+#contact-form ul {
+    list-style:none;
+    color:black;
+    max-width: 400px;
+}
+#contact-form label {
+    display:block;
+    font-weight: bold;
+    margin:0 0 3px 0;
+}
+#contact-form-text-box {
+    width:400px;
+    height: 300px;
+}
+#contact-map {
+    display:grid;
+    justify-content: baseline;
+}
+/*CSS tilhørende kontaktskjema - kontakt oss slutt*/
+
+/*Analyse-siden*/
+.analyse-images-container {
+    background-color: #f9f9f9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0.5px solid grey;/*Borders eller ikke?*/
+}
+.analyse-images {
+    height:auto;
+}
+/*Analyse-siden slutt*/
+/* Share-buttons*/
+.share-buttons {
+    display:flex;
+    flex-direction:column;
+    margin-left: 1em;
+}
+.pin-it-button {
+    margin:10px;
+}
+.fb-share-button {
+    margin-bottom:10px;
+}
+.twitter-share-button {
+    margin-bottom:10px;
+}
+/*Share-buttons slutt*/
+footer {
+    border-radius: 0.5rem;
+}
+
+footer h4 {
+    margin-left:0.5rem;
+}
+footer a {
+    color: #212121;
+}
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Lær om universell utforming, søkemotoroptimalisering og analyse av et nettsted i praksis">
+        <title>Webutvikling - Deleksamen 4</title>
+        <!--Open Graph-implementasjon-->
+        <meta property="og:title" content="Lær om universell utforming, søkemotoroptimalisering og analyse av et nettsted i praksis">
+        <meta property="og:description" content="På dette nettstedet vil du bli introdusert for ulike deler av webutvikling. 
+        Her kan du lære om blant annet, hva et 'CMS' er, 
+        hvordan oppnå tilgjengelig innhold for alle brukere, hvordan blidgjøre søkemotorer eller hvordan analysere et nettsted">
+        <meta property="og:url" content="https://itstud.hiof.no/~espeso/deleksamen4/index.html">
+        <meta property="og:image" content="https://itstud.hiof.no/~espeso/deleksamen4/images/article-box1.jpg">
+        <meta property="og:image:alt" content="Illustrasjon av elementer innenfør søkemotoroptimalisering">
+        <meta property="og:site_name" content="Webutvikling - Deleksamen 4">
+        <meta property="og:locale" content="nb_NO">
+        <meta property="og:type" content="article">
+        <!--Twitter-cards-implementasjon-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Lær om universell utforming, søkemotoroptimalisering og analyse av et nettsted i praksis">
+        <meta name="twitter:description" content="På dette nettstedet vil du bli introdusert for ulike deler av webutvikling. 
+        Her kan du lære om blant annet, hva et 'CMS' er, hvordan oppnå tilgjengelig innhold for alle brukere, hvordan blidgjøre søkemotorer eller hvordan analysere et nettsted">
+        <meta name="twitter:site" content="@rum-espen">
+        <meta name="twitter:image" content="https://itstud.hiof.no/~espeso/deleksamen4/images/article-box1.jpg">
+        <meta name="twitter:image:alt" content="Illustrasjon av elementer innenfør søkemotoroptimalisering">
+        <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Under ligger favicon-henvisninger-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Favicon-bilde hentet fra: https://pixabay.com/vectors/responsive-mobile-cell-phone-2440940/-->
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <a href="index.html" tabindex="1"><img id="logo" src="images/logo4.0.png" alt="placeholder for logo"></a>
+                <!--Logo-bilde hentet fra: https://pixabay.com/illustrations/icon-symbol-button-round-design-3537469/-->
+                <h1>Deleksamen 4</h1>
+                <!--Hovednavigering start-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" tabindex="2">Hjem</a></li>
+                        <li><a href="uuvsseo.html" tabindex="3">UU vs SEO</a></li>
+                        <li><a href="cms.html" tabindex="4">CMS</a></li>
+                        <li><a href="analyse.html" tabindex="5">Analyse</a></li>
+                        <li><a href="kontaktoss.html" tabindex="6">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <!--Hovednavigering slutt-->
+                <!--Hamburgermeny til lavere skjermoppløsning-->
+                <div class="drop-down-meny">
+                        <div id="links">
+                            <a href="index.html">Hjem</a>
+                            <a href="uuvsseo.html">UU vs SEO</a>
+                            <a href="cms.html">CMS</a>
+                            <a href="analyse.html">Analyse</a>
+                            <a href="kontaktoss.html">Kontakt oss</a>
+                        </div>
+                    <a href="index.html" class="icon" aria-label="meny-knapp" onclick="myFunction()">
+                        <i class="fa fa-bars"></i></a>
+                </div>
+                <!--Slutt hamburgermeny-->
+            </header>
+            <!--Her starter hovedinnholdet på siden-->
+            <main>
+            <section id="intro">
+                <h2 tabindex="7">Introduksjon</h2>
+                <p tabindex="8">På denne nettsiden vil det gjennom en periode implementeres en del forskjellig innhold basert på hvilke kunnskaper undertegnede tilegner seg. 
+                    Dette er en del av eksamens-oppgavene i faget: "ITF10511-1 22H Webutvikling" på Høgskolen i Østfold og vil til slutt være en komplett nettside. 
+                    Det blir spennende å se hvordan denne nettsiden vil utbedres og utvikles gjennom dette semesteret. Nettsiden er en samling av fire deleksamener.
+                    Undertegnede er i alle fall klar for å yte sitt beste. </p>
+                <a href="kontaktoss.html" id="contact-button" tabindex="9">Kontakt oss</a>
+            </section>
+            <section>
+                <article tabindex="10">
+                    <img class="article-image-front-page" src="images/article-box1.jpg" alt="illustrasjon av UU VS SEO">
+                    <!--Bilde hentet fra: https://www.louiseasperud.com/hva-er-egentlig-seo/-->
+                    <h3>«UU» vs «SEO»</h3>
+                    <p>Universell utforming har blitt et velkjent begrep i dagens samfunn. FN-konvensjonen definerer universell utforming slik:
+                        «Med universell utforming menes: utforming av produkter, omgivelser, programmer og tjenester på en slik måte at de kan brukes av alle mennesker, 
+                        i så stor utstrekning som mulig, uten behov for tilpassing og en spesiell utforming. Universell utforming skal ikke 
+                        utelukke hjelpemidler for bestemte grupper av mennesker med nedsatt funksjonsevne når det er behov for det».</p>
+                    <a href="uuvsseo.html" tabindex="11">Les mer</a>
+                </article>
+                <article tabindex="12">
+                    <img class="article-image-front-page" src="images/article-box2.png" alt="illustrasjon av CMS">
+                    <!--Bilde hentet fra: https://redcatstudios.net/what-is-a-cms-or-content-management-systems/-->
+                    <h3>CMS</h3>
+                    <p><span lang="en">Content Management System</span>, heretter forkortet «CMS» er en type programvare som tillater deg å lage og levere digitalt innhold ved hjelp av et grafisk brukergrensesnitt.
+                        Dette kan eksempelvis være at du vil lage, administrere, endre og tilpasse innhold på en nettside.
+                        Men, det kan også være bruk av sky-tjenester for å ha back-up av bryllups-bildene dine.
+                        Mange firmaer bruker også «CMS-systemer» som en plattform de driver bedriften ut ifra.
+                        Kommunikasjon med kunder, lagring av data, produkthåndtering o.l.
+                        «CMS» krever ingen form for teknisk bakgrunn, noe som gjør programvaren enkel å bruke for alle og enhver.</p>
+                    <a href="cms.html" tabindex="13">Les mer</a>
+                </article>
+                <article tabindex="14">
+                    <img class="article-image-front-page" src="images/analyse2.0.jpg" alt="illustrasjon av analyse">
+                    <!--Bilde hentet fra: https://www.freepik.com/free-vector/analysis-concept-illustration_7069167.htm#query=analysis&position=18&from_view=keyword-->
+                    <h3>Analyse</h3>
+                    <p>På denne siden vil det bli gjennomgått en analyse av nettstedet mitt. 
+                        I analysen vil det bli fremstilt hvordan nettsiden møter kravene innenfor universell utforming, hvordan nettsiden fungerer opp mot søkemotorer og en heuristisk evaluering av siden. 
+                        Resultatene blir dokumentert i form av tekst, bilder og en tabell. 
+                        Jeg vil ta for meg resultatene ved analysen og tiltakene som er gjennomført for å forbedre nettsiden basert på funnene eller forbedringspotensialet i analysen.</p>
+                    <a href="analyse.html" tabindex="15">Les mer</a>
+                </article>
+            </section>
+            <!--Share-buttons-->
+            <div class="share-buttons">
+                <!--Twitter-->
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
+                <!--Hentet fra: https://publish.twitter.com/?buttonType=TweetButton&widget=Button-->
+                <!--Facebook-->
+                <div id="fb-root"></div>
+                    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="I6N1RMWC"></script>
+                <div class="fb-share-button" data-href="index.html" data-layout="button_count" 
+                data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
+                class="fb-xfbml-parse-ignore">Del</a></div>
+                <!--Pinterest-->
+                <a href="//www.pinterest.com/pin/create/button/" class="pin-it-button"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin it"></a>
+                <!--Hentet fra: https://w3bits.com/pinterest-pin-it-button/-->
+            </div>
+            </main>
+            <!--Her slutter hovedinnholdet på forsiden-->
+            <footer tabindex="16">
+                <h4>Kontaktinformasjon</h4>
+                    <ul>
+                        <li>Høgskolen i Østfold</li>
+                        <li>B R A veien 4 </li>
+                        <li>1757 Halden</li>
+                        <li>69608000</li>
+                        <li><a href="#" tabindex="17">postmottak@hiof.no</a></li>
+                    </ul>
+            </footer>
+        </div>
+        <script src="scripts/hamburgermeny.js"></script>
+    </body>
+</html>

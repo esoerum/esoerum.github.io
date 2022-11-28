@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="På denne siden finner du kontaktinformasjonen om oss. Bruk informasjonen, benytt deg av skjemaet eller naviger med kartet.">
+        <title>Webutvikling - Deleksamen 4</title>
+        <!--Open Graph-implementasjon-->
+        <meta property="og:title" content="Kontakt oss ved å benytte deg av informasjonen på denne siden">
+        <meta property="og:description" content="På denne siden finner du informasjon om hvordan du kan komme i kontakt med oss. 
+        Benytt deg av kontaktinformasjonen, kontaktskjemaet eller kartet for å finne veien til oss.">
+        <meta property="og:url" content="https://itstud.hiof.no/~espeso/deleksamen4/kontaktoss.html">
+        <meta property="og:image" content="https://itstud.hiof.no/~espeso/deleksamen4/article-box1.jpg">
+        <meta property="og:image:alt" content="Illustrasjon av elementer innenfør søkemotoroptimalisering">
+        <meta property="og:site_name" content="Webutvikling - Deleksamen 4">
+        <meta property="og:locale" content="nb_NO">
+        <meta property="og:type" content="article">
+         <!--Twitter-cards-implementasjon-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Kontakt oss ved å benytte deg av informasjonen på denne siden">
+        <meta name="twitter:description" content="På denne siden finner du informasjon om hvordan du kan komme i kontakt med oss. 
+        Benytt deg av kontaktinformasjonen, kontaktskjemaet eller kartet for å finne veien til oss.">
+        <meta name="twitter:site" content="@rum-espen">
+        <meta name="twitter:image" content="https://itstud.hiof.no/~espeso/deleksamen4/article-box1.jpg">
+        <meta name="twitter:image:alt" content="Illustrasjon av elementer innenfør søkemotoroptimalisering">
+        <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/52cffb716c.js" crossorigin="anonymous"></script>
+        <!--Under ligger favicon-henvisninger-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Favicon-bilde hentet fra: https://pixabay.com/vectors/responsive-mobile-cell-phone-2440940/-->
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <a href="index.html" tabindex="1"><img id="logo" src="images/logo4.0.png" alt="placeholder for logo"></a>
+                <!--Logo-bilde hentet fra: https://pixabay.com/illustrations/icon-symbol-button-round-design-3537469/-->
+                <h1>Deleksamen 4</h1>
+                <!--Hovednavigering start-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" tabindex="2">Hjem</a></li>
+                        <li><a href="uuvsseo.html" tabindex="3">UU vs SEO</a></li>
+                        <li><a href="cms.html" tabindex="4">CMS</a></li>
+                        <li><a href="analyse.html" tabindex="5">Analyse</a></li>
+                        <li><a href="kontaktoss.html" tabindex="6">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <!--Hovednavigering slutt-->
+                <!--Hamburgermeny til lavere skjermoppløsning-->
+                <div class="drop-down-meny">
+                    <div id="links">
+                        <a href="index.html">Hjem</a>
+                        <a href="uuvsseo.html">UU vs SEO</a>
+                        <a href="cms.html">CMS</a>
+                        <a href="analyse.html">Analyse</a>
+                        <a href="kontaktoss.html">Kontakt oss</a>
+                    </div>
+                <a href="index.html" class="icon" aria-label="meny-knapp" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+            <!--Slutt hamburgermeny-->
+            </header>
+            <!--Her starter hovedinnholdet på siden-->
+            <main id="contact-info-container">
+                <article tabindex="7">
+                    <h2 class="subpage-h2">Kontakt oss</h2>
+                    <p>Nedenfor ligger kontaktinformasjonen til oss dersom du har noen spørsmål vedrørende innholdet på denne siden eller andre henvendelser.
+                       Ring, send en mail eller benytt kontaktskjemaet under for å rette henvendelser til oss. Dersom du benytter deg av kontaktskjemaet vil vi besvare deg på e-post ved første anledning.
+                       Vi venter på å høre fra deg! 
+                       Ingen dumme spørsmål! Du kan også benytte deg av kartet under her for å finne veien frem til oss.
+                    </p>
+                </article>
+                <ul class="fa-ul" id="contact-info" tabindex="8">
+                    <li><span class="fa-li"><i class="fa-solid fa-house"></i></span>Høgskolen i Østfold</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-map-location"></i></span>B R A veien 4 </li>
+                    <li><span class="fa-li"><i class="fa-sharp fa-solid fa-location-dot"></i></span>1757 Halden</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-phone-volume"></i></span>69608000</li>
+                    <li><span class="fa-li"><i class="fa-solid fa-square-envelope"></i></span><a href="#">postmottak@hiof.no</a></li>
+                </ul>
+                <div id="contact-form">
+                <form>
+                    <ul>
+                        <li><label>Fornavn:</label></li>
+
+                        <li><input type="text" name="Felt for å fylle inn fornavn" placeholder="Skriv inn ditt fornavn" tabindex="9"></li>
+
+                        <li><label>Etternavn:</label></li>
+
+                        <li><input type="text" name="Felt for å fylle inn etternavn" placeholder="Skriv inn ditt etternavn" tabindex="10"></li>
+
+                        <li><label>E-post</label></li>
+
+                        <li><input type="email" name="Felt for å fylle inn e-post" placeholder="E-post" tabindex="11"></li>
+
+                        <li><label>Melding:</label></li>
+
+                        <li><textarea placeholder="Skriv her.." id="contact-form-text-box" tabindex="12"></textarea></li>
+
+                        <li><input type="submit" value="Send inn" tabindex="13"></li>
+                        
+                        
+                    </ul>
+                </form>
+                <!--Kart over bedriften-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761208053!2d11.35061461618698!3d59.12925023409059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1667990614403!5m2!1sno!2sno" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="contact-map" tabindex="14"></iframe>
+                <!--iFrame hentet fra Google-->
+            </main>
+            <!--Her slutter hovedinnholdet på siden-->
+            <footer tabindex="15">
+                <h4>Kontaktinformasjon</h4>
+                <ul>
+                    <li>Høgskolen i Østfold</li>
+                    <li>B R A veien 4 </li>
+                    <li>1757 Halden</li>
+                    <li>69608000</li>
+                    <li><a href="#" tabindex="16">postmottak@hiof.no</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>

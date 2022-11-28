@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Les og opplev en analyse av et nettsted. Ved å lese dette vil du ha muligheten til å gjennomføre en analyse av ditt eget nettsted.">
+        <title>Webutvikling - Deleksamen 4</title>
+        <!--Open Graph-implementasjon-->
+        <meta property="og:title" content="Les og se hvordan jeg gjennomførte analyse av mitt nettsted med ulike analyseverktøy">
+        <meta property="og:description" content="På denne siden vil du se hvordan jeg gjennomførte analyse av mitt nettsted. 
+        Du vil bli kjent med forskjellige analyseverktøy, hva som kan analyseres på en nettside, og hvordan nettsiden min forbedret seg etter å ha gjennomført en analyse av nettsiden">
+        <meta property="og:url" content="https://itstud.hiof.no/~espeso/deleksamen4/analyse.html">
+        <meta property="og:image" content="https://itstud.hiof.no/~espeso/deleksamen4/analyse2.0.jpg">
+        <meta property="og:image:alt" content="Illustrasjon av mann med forstørrelsesglass">
+        <meta property="og:site_name" content="Webutvikling - Deleksamen 4">
+        <meta property="og:locale" content="nb_NO">
+        <meta property="og:type" content="article">
+         <!--Twitter-cards-implementasjon-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Les og se hvordan jeg gjennomførte analyse av mitt nettsted med ulike analyseverktøy">
+        <meta name="twitter:description" content="På denne siden vil du se hvordan jeg gjennomførte analyse av mitt nettsted. 
+        Du vil bli kjent med forskjellige analyseverktøy, hva som kan analyseres på en nettside, og hvordan nettsiden min forbedret seg etter å ha gjennomført en analyse av nettsiden">
+        <meta name="twitter:site" content="@rum-espen">
+        <meta name="twitter:image" content="https://itstud.hiof.no/~espeso/deleksamen4/analyse2.0.jpg">
+        <meta name="twitter:image:alt" content="Illustrasjon av mann med forstørrelsesglass">
+        <!--Stylesheets-->
+        <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Under ligger favicon-henvisninger-->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <!--Favicon-bilde hentet fra: https://pixabay.com/vectors/responsive-mobile-cell-phone-2440940/-->
+    </head>
+    <body>
+        <div class="main-container">
+            <header>
+                <a href="index.html" tabindex="1"><img id="logo" src="images/logo4.0.png" alt="placeholder for logo"></a>
+                <!--Logo-bilde hentet fra: https://pixabay.com/illustrations/icon-symbol-button-round-design-3537469/-->
+                <h1>Deleksamen 4</h1>
+                <!--Hovednavigering start-->
+                <nav>
+                    <ul>
+                        <li><a href="index.html" tabindex="2">Hjem</a></li>
+                        <li><a href="uuvsseo.html" tabindex="3">UU vs SEO</a></li>
+                        <li><a href="cms.html" tabindex="4">CMS</a></li>
+                        <li><a href="analyse.html" tabindex="5">Analyse</a></li>
+                        <li><a href="kontaktoss.html" tabindex="6">Kontakt oss</a></li>
+                    </ul>
+                </nav>
+                <!--Hovednavigering slutt-->
+                <!--Hamburgermeny til lavere skjermoppløsning-->
+                <div class="drop-down-meny">
+                    <div id="links">
+                        <a href="index.html">Hjem</a>
+                        <a href="uuvsseo.html">UU vs SEO</a>
+                        <a href="cms.html">CMS</a>
+                        <a href="analyse.html">Analyse</a>
+                        <a href="kontaktoss.html">Kontakt oss</a>
+                    </div>
+                <a href="index.html" class="icon" aria-label="meny-knapp" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
+            </div>
+            <!--Slutt hamburgermeny-->
+            </header>
+            <!--Her starter hovedinnholdet på siden-->
+            <main class="subpage-main-container">
+                <article tabindex="7">
+                    <h2 class="subpage-h2">Analyse</h2>
+                    <h3 class="subpage-h3">Fremgangsmåte</h3>
+                    <p>På denne siden vil det bli gjennomgått en analyse av nettstedet mitt.
+                        I analysen vil det bli fremstilt hvordan nettsiden møter kravene innenfor universell utforming,
+                        hvordan nettsiden fungerer opp mot søkemotorer og en heuristisk evaluering av siden. 
+                        Resultatene blir dokumentert i form av tekst, bilder og en tabell. 
+                        Jeg vil ta for meg resultatene ved analysen og tiltakene som er gjennomført for å forbedre nettsiden basert på funnene eller forbedringspotensialet i analysen.</p>
+                        <p>Nederst på siden er det linket til en tilgjengelighetserklæring i en tabell som knytter nettsiden opp mot retningslinjene i WCAG 2.0.</p>
+                    <!--Analyse av UU-->    
+                    <h3 class="subpage-h3">Analyse av universell utforming</h3>
+                    <p>Det første jeg skal analysere er hvor tilgjengelig eller universelt utformet nettsiden min er.
+                        I analysen benyttet jeg meg av analyseverktøyet fra <span lang="en">"Wave"</span>: <a href="https://wave.webaim.org/">https://wave.webaim.org/</a>
+                        og en innebygd <span lang="en">"extension"</span> i Google Chrome ved navn <span lang="en">"Lighthouse"</span>.
+                        Resultatene av analysen er skildret i bildene nedenfor. I det første bildet er det en overordnet oversikt fra analysen gjennomført med "Wave"
+                        og i det andre bildet er det en mer beskrivende oversikt av analysen. Bilde nummer tre viser til feilmeldingene vedrørende kontrast på nettsiden. Disse feilene var gjennomgående på alle HTML-sidene på nettstedet mitt.
+                    </p>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/webaim-resultat.png" class="analyse-images" alt="Bilde av resultat av tilgjengelighetstest ved 'Wave'-verktøy">
+                        <img src="images/analysedokumentasjon/webaim-resultat4.png" class="analyse-images" alt="Bilde av oppsummert resultat av tilgjengelighetstest ved 'Wave'-verktøy">
+                        <img src="images/analysedokumentasjon/webaim-resultat3.png" class="analyse-images" alt="Bilde av footer fra siden med diverse feilmeldinger på fra analysne hos 'Wave'.">
+                        <p><i>Bildene illustrerer analyseresultatene fra analysering av universell utforming med verktøy fra "Wave".</i></p>
+                        </div> 
+                        <h3 class="subpage-h3">WAVE</h3>
+                        <p>Analysen påpekte at "headeren" og "footeren" på nettsiden min ikke hadde god nok kontrast opp mot teksten som brukes i de. Det var disse som forårsaket de syv kontrast-feilene. 
+                            Dette kan være forstyrrende og skape problemer for mennesker med synsforstyrrelser.
+                            For å gjøre noe med dette problemet, ble jeg nødt til å endre bildet jeg brukte i "headeren" og "footeren". Jeg googlet meg frem til hvilke fargekombinasjoner som scoret høyt opp mot tilgjengelighet,
+                            og fant bilder som representerte dette.
+                            Jeg byttet også tekstfargen for å oppnå kravene i WCAG2.0. 
+                            Videre var det en <span lang="en">"empty-link-error"</span>. Denne feilmeldingen var basert på at "hamburgermenyen" på mobil-versjonen ikke hadde visuell tekst eller alternativ tekst.
+                            Visuelt sett ville det sett rart ut å legge inn tekst der man skal trykke på menyen. For å fikse dette benyttet jeg meg av "aria-label" og gav den et beskrivende navn. 
+                            "Aria-label" er synlig for hjelpemidler som opplesningverktøy o.l. Denne endringen gjør dermed menyen lettere tilgjengelig. Implementeringene og endringene er skildret i bildene under.
+                        </p>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/webaim-resultat-after.png" class="analyse-images" alt="Bilde av oppsummerende analyseresultat fra 'Wave'. Ingen feil eller kontrast-feil.">
+                        <p><i>På oppsummeringen i bildet over så er feilmeldingen og kontrast-feilene borte. 
+                            Dette på bakgrunn av implementeringene i bildene under.</i></p>
+                    </div>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/header-after-improvement.PNG" class="analyse-images" alt="Bilde av header etter endringer av farge og bilde.">
+                        <img src="images/analysedokumentasjon/header-footer-contrast.PNG" class="analyse-images" alt="Bilde av header etter endringer av farge og bilde.">
+                        <img src="images/analysedokumentasjon/footer-after-change.PNG" class="analyse-images" alt="Bilde av footer etter endringer av farge og bilde.">
+                        
+                        <p><i>Denne kombinasjonen av farge, tekst og bilde fungerte bedre og var lettere tilgjengelig enn fargekombinasjonen jeg hadde før analysen. </i></p>
+                    </div>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/empty-link-documentation.PNG" class="analyse-images" alt="Bilde av kodeimplementasjon av 'aria-label'">
+                        <p><i>I oppsummeringen over har feilmeldingen forsvunnet. Dette er på grunn av implementeringen av "aria-label" i linken over.</i></p>
+                    </div>
+                    <h3 class="subpage-h3">Lighthouse</h3>
+                    <p>Videre i analysen brukte jeg<span lang="en">"Lighthouse" i Google Chrome</span> for å teste ytterligere rundt tilgjengeligheten på siden min.
+                       Ved hjelp av "Lighthouse" fikk jeg testet dette både på "desktop" og "mobil" ved å gjøre testen to ganger.
+                       Ut ifra analysen her var jeg veldig fornøyd med resultatet. Test av "desktop"-delen av siden min førte til 100 i score, som tilsvarer den maksimale scoren man kan få på denne testen.
+                       Dermed trengte jeg ikke å implementere noen endringer her. Ved testing av "mobil"-siden så fikk jeg totalt 95 av 100 mulige i score. Dette viste at det dermed var mulighet for forbedringer.
+                       Testen slo ut på samme feilmelding som jeg fikk med analyseverktøyet hos "Wave". Dette var at en link i "hamburgermenyen" på mobil-siden var tom. Ved å implementere "aria-label" som nevnt over
+                       forsvant også denne feilmeldingen i <span lang="en">"Lighthouse".</span></p>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/lighthouse-summary.png" class="analyse-images" alt="Bilde av resultat fra 'Lighthouse' av desktop-delen av siden min.">
+                        <img src="images/analysedokumentasjon/lighthouse-summary-mobile.PNG" class="analyse-images" alt="Bilde av resultat fra 'Lighthouse' av mobil-delen av siden min.">
+                        <p><i>Bildene illustrerer analyseresultatene fra analysering av universell utforming ved hjelp av Lighthouse. 
+                            Bildet til venstre viser analyseresultatene av "desktop"-versjonen av siden og bildet til høyre viser analyseresultatene av "mobil"-versjonen.</i></p>
+                    </div>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/lighthouse-mobile-after-implementation.PNG" class="analyse-images" alt="Bilde en av analyseresultat fra 'Lighthouse' av mobil-siden min etter implementasjon.">
+                        <p><i>Bildet over viser resultatet med "Lighthouse" på mobil-versjonen av siden min etter implementasjonen av "aria-label". </i></p>
+                    </div>
+                    <!--Slutt analyse av UU-->
+                    <!--Analyse av SEO-->
+                    <h3 class="subpage-h3">Analyse av SEO</h3>
+                    <p>I analysen av søkemotoroptimalisering (SEO) skal jeg benytte meg av "Lighthouse" som er et dekkende verktøy for SEO-analyse. 
+                        Slik som nevnt tidligere er "Lighthouse" en <span lang="en">"extension" i Google Chrome</span> og kan benyttes til å analysere flere ting.
+                        Jeg gjennomførte to tester med "Lighthouse", en for desktop og en for mobil-versjonen. På desktop-delen scoret jeg 80 av 100 og på mobil-delen scoret jeg 75 av 100. 
+                        På begge testene fikk jeg feil på følgende: <span lang="en">Document does not have a meta description" og "Links are not crawlable"</span>. 
+                        Det som skilte seg ut og gav mobil-versjonen dårligere score var <span lang="en">"Document doesn't use legible font sizes."</span>
+                        Resultatene fra testene er illustrert i bildene nedenfor.</p>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-desktop.PNG" class="analyse-images" alt="Bilde av analyseresultat søkemotoroptimalisering med lighthouse på desktop-delen av siden. 80 i score.">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-mobile.PNG" class="analyse-images" alt="Bilde av analyseresultat søkemotoroptimalisering med lighthouse på mobil-delen av siden. 75 i score.">
+                        <p><i>Bildet til venstre illustrerer analyseresultatene fra desktop-delen av nettsiden og bildet til høyre illustrerer analyseresultatene fra mobil-delen av nettsiden.</i></p>
+                    </div>
+                    <p>På begge testene ble det trukket frem at <span lang="en">"Document does not have a meta description".</span> Dette er vesentlig å ha med når det kommer til søkemotoroptimalisering.
+                       Dette er teksten som er synlig når mennesker googler og ser siden din i søkefeltene hos søkemotorene. Denne beskrivelsen oppsummerer innholdet på siden din og kan ligge på rundt 150 tegn.
+                       Jeg implementere unike <span lang="en">meta-descriptions</span> i html-filene mine etter å ha sett analyseresultatene. Hver og en html-fil har sin unike meta-description. 
+                    <p>Den andre feilen som slo ut på begge testene var <span lang="en">"Links are not crawlable.</span>
+                       I analysen klaget den på en link knyttet til javascript og "hamburgermenyen". Spesifikt var det ikonet til "hamburgermenyen". 
+                       Denne linken hadde en "href" som var knyttet opp til javascript (javascript:void(0);). Etter en del googling
+                       fant jeg ut at søkemotorene ikke har mulighet til å <span lang="en">"crawle"</span> gjennom dette. Derfor implementerte jeg en vanlig link til dette elementet som løste problemet.</p>
+                    <p>Det som skilte desktop og mobil-versjonen i testen var <span lang="en">"Document doesn't use legible font sizes".</span> 
+                       Spesifikt så handler dette problemet om at teksten er for liten på mobil-versjonen av nettsiden min. Dette gjør det vanskelig å lese på mindre enheter.
+                       Dermed var jeg nødt til å endre skriftstørrelse i CSS-fila slik at teksten ble mulig å lese uten og måtte zoome inn.</p>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/meta-description-implementation.PNG" class="analyse-images" alt="Bilde av implementasjon av meta description">
+                        <p><i>I bildet over har <span lang="en">meta-description</span> blitt implementert på index-siden. Dette forbedret SEO og gjorde at feilmelding ved analyse hos "Lighthouse" ble rettet opp i.</i></p>
+                    </div>   
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/crawler-problem-before.PNG" class="analyse-images" alt="Bilde av kodeproblemet som gjorde at linken ikke var crawlable">
+                        <img src="images/analysedokumentasjon/crawler-problem-after.PNG" class="analyse-images" alt="Bilde av koden etter endring som gjorde at linken ble crawlable">
+                        <p><i>Bildet til venstre viser før og bildet til høyre viser etter endringene som gjaldt <span lang="en">"Links are not crawlable".</span> Dette endringen fikset feilen.</i></p>
+                    </div>
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/font-size-change.PNG" class="analyse-images" alt="">
+                        <p><i>I bildet over endret jeg font-size på containeren i media queriet til mobil slik at størrelsen ble større og mer leselig ved bruk av mindre skjermer som f. eks mobiler. 
+                            Lighthouse godkjente dermed skriftstørrelsen som ved 0.7rem tilsvarte rundt 14px på en mobilskjerm.</i></p>
+                    </div>
+                    <p>I bildene under er testresultatene etter ferdig implementerte endringer på nettsiden. Testene på både desktop og mobil scorte til 100. Dette er den høyeste summen "Lighthouse" gir ved slik testing.
+                       På bakgrunn av denne analysen vil jeg si at nettsiden min kan anses å være søkemotoroptimalisert. Det vil alltid være ting man kan jobbe med, og jobben for å holde nettsiden oppdatert etter kravene
+                       fra søkemotorene vil være en kontinuerlig jobb.
+                    </p>   
+                    <div class="analyse-images-container">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-desktop-finish.PNG" alt="Bilde av endelig analyseresultat av SEO på desktop-delen av siden. 100 i score.">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-mobile-finish.PNG" alt="Bilde av endeling analysresultat av SEO på mobil-delen av siden. 100 i score">
+                        <p><i>Bildet til venstre viser endelig testresultat på desktop-testen og bildet til høyre viser endelig testresultat på mobil-testen av nettsiden.</i></p>
+                    </div>
+                    <!--Slutt analyse av SEO-->
+                    
+                </article>
+                <!--Tabell analyseresultat-->
+                <p tabindex="8">I tabellen nedenfor er analysen av universell utforming og søkemotoroptimalisering lagt inn i en tabell. Dette gir deg et mer visuelt inntrykk av hvordan jeg kom frem
+                    til resultatene i analysen. Jeg tar for meg hva jeg har analysert, hvilke analyseverktøy som er brukt, hvilke feilmeldinger som dukket opp, hvilke problemstillinger som
+                    var tilstede og hvordan dette ble utbedret.</p>
+                <section class="table-container" tabindex="9">
+                    <section class="header-four-column-table">
+						<h2 class="header-titles">Hva er analysert:</h2>
+						<h2 class="header-titles">Analyseverktøy/Error</h2>
+						<h2 class="header-titles">Problemstilling</h2>
+                        <h2 class="header-titles">Tiltak og resultat</h2>
+					</section>
+                    <!--Første rad-->
+                        <section class="table-row-four-columns">
+                            <h2 class="item-title">Universell utforming</h2>
+                            <section class="content-four-column-table">
+                                <div class="group2">
+                                <h2 class="small-title">Analyseverktøy/Error</h2>
+                                    <ul class="group-content">
+                                        <li><span lang="en">WAVE: "Empty link error"</span> på hamburgermeny-ikon på mobilside</li>
+                                        <li>WAVE: Kontrast-feil header</li>
+                                        <li>WAVE: Kontrast-feil footer</li>
+                                        <li>LIGHTHOUSE: <span lang="en">"Links do not have a discernible name". Dette gjaldt hamburgermeny-ikonet på mobilsiden, samme som er konkludert over</span></li>
+                                    </ul>
+                                </div>
+                                <div class="group3">
+                                <h2 class="small-title">Problemstilling</h2>
+                                    <ul class="group-content">
+                                        <li><span lang="en">"Empty link error"</span> skyldtes at linken ikke hadde noe visuell tekst for opplesningverktøy eller lignende</li>
+                                        <li>Headeren hadde for liten kontrast og det ville bli vanskelig å få med seg innholdet for mennesker med synsforstyrrelser</li>
+                                        <li>Footeren hadde for liten kontrast og det ville bli vanskelig å få med seg innholdet for mennesker med synsforstyrrelser</li>
+                                        <li><span lang="en">"Links do not have a discernible name" skyldtes at linken ikke hadde noen visuell tekst for opplesningverktøy eller liknende</li>
+                                    </ul>
+                                </div>
+                                <div class="group1">
+                                <h2 class="small-title">Tiltak og resultat</h2>
+                                    <ul class="group-content">
+                                        <li>Jeg implementete "aria-label" for å gi opplesningsverktøy mulighet til å lese av linken. Dette fikset <span lang="en">"Empty link error"</span> </li>
+                                        <li>Jeg fant inspirasjon på Google vedrørende tilgjengelige fargekombinasjoner og fant et nytt bilde som jeg kombinerte med ny fargetekst i header og footer.
+                                            Fargekombinasjonene #212121 som tekst og #C9C8C4 som bakgrunn scorer til 9.61:1 i kontrast-rating</li>
+                                        <li>Samme som med <span lang="en">"Empty link error"</span> over så hjalp implementasjonen av "aria-label" for denne problemstillingen</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </section>
+                    <!--Andre rad-->
+                        <section class="table-row-four-columns">
+                            <h2 class="item-title">Søkemotoroptimalisering</h2>
+                            <section class="content-four-column-table">
+                                <div class="group2">
+                                <h2 class="small-title">Analyseverktøy/Error</h2>
+                                    <ul class="group-content">
+                                        <li>LIGHTHOUSE:<span lang="en"> "Document does not have<br> a meta description"</span></li>
+                                        <li>LIGHTHOUSE:<span lang="en"> "Links are not crawlable"</span></li>
+                                        <li>LIGHTHOUSE:<span lang="en"> "Document doesn't use legible font sizes"</span></li>
+                                    </ul>
+                                </div>
+                                <div class="group3">
+                                <h2 class="small-title">Problemstilling</h2>
+                                    <ul class="group-content">
+                                        <li>Mangel på meta-description forårsaket dette problemet på samtlige html-sider.</li>
+                                        <li>Problemstillingen her var at linken i hamburgermenyen på mobilsiden hadde en "href" som var fylt med javascript. Dette gjorde at
+                                            søkemotorens "crawler" ikke klarte å lese av/navigere linken</li>
+                                        <li>Årsaken til denne feilen var at skriftstørrelsen jeg hadde på mobil-versjonen av nettsiden min var for liten. Dette førte til at brukere var nødt til å zoome inn
+                                            for å få med seg alt av innholdet.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="group1">
+                                <h2 class="small-title">Tiltak og resultat</h2>
+                                    <ul class="group-content">
+                                        <li>Ved å implementere unike meta-descriptions til alle html-sidene fikset dette feilmeldingen og forbedret SEO</li>
+                                        <li>Jeg byttet ut javascript-delen som lå i "href" med en treffende link på siden min. Dette fikset problemet og gjorde at "crawleren" kunne navigere gjennom linken</li>
+                                        <li>Jeg økte skriftstørrelsen på media-queriet til mobil-siden slik at det tilsvarte ca 14px og gjorde det leselig for samtlige brukere.</li>
+                                    </ul>
+                                </div>
+                            </section>
+                        </section>
+                </section>
+                    <!--Heuristisk evaluering-->
+                <article tabindex="10">    
+                    <h3 class="subpage-h3">Heuristisk evaluering</h3>
+                    <!--<img src="https://miro.medium.com/max/720/1*ML_-bqBYywTISthT9gR6Yg.webp" alt="Illustrasjon av mann med to snakkebobler">
+                    Bildet lånt fra https://medium.muz.li/the-ultimate-guide-difference-between-usability-and-user-experience-afb757ded1c4-->
+                    <p>I denne delen av analysen skal jeg foreta en heuristisk evaluering av siden min. Dette er basert på Jakob Nielsen's ti generelle prinsipper for interaktivt design.
+                        Disse prinsippene blir ofte regnet som tommelfingelregler og er greit å ha i bakhodet når man jobber med design av nettsider.</p>
+                    <p>Et av punktene i denne vurderingen
+                        omhandler bruk av ord, fraser, design og innhold som er kjent for brukeren. Brukeren skal ikke nødvendigvis trenge å slå opp et ord for å forstå innholdet.
+                        Innholdet på nettsiden jeg har laget er nok egnet for brukere som har noe kunnskap om webutvikling fra før. 
+                        Jeg har ved flere anledninger gjort rede for en rekke begreper, men det er ikke slik at jeg har eksplisitt gjort rede for "enklere" begreper innenfor webutviklingen. 
+                        Jeg har tatt høyde for at brukeren er noe kjent med webutvikling fra før. Det vil si at innholdet
+                        muligens ikke er like tilgjengelig å forstå for brukere som ikke har noe bakgrunnskunnskap om webutvikling fra før. 
+                        Samtidig er designet og innholdet som er tilstede i en logisk og kronologisk rekkefølge, noe som gjør innholdet naturlig å forstå for en med bakgrunnskunnskaper.</p>
+                    <p>Ved større nettsteder med mye interaktivt innhold er det lurt å gjøre brukeren bevisst på hvor man er på siden. Det er også aktuelt å implementere såkalte <span lang="en">"emergency exits".</span>
+                        Det betyr at du gir brukeren mer frihet til å bevege seg rundt på siden, og eventuelt forlate deler av siden dersom brukeren ønsker det. Hvis vi knytter dette opp mot min nettside så føler jeg at dette ikke
+                        er like aktuelt her. Det er svært lite interaktive designløsninger der dette kunne vært brukt på min nettside. Dersom jeg hadde hatt et større utfyllingsskjema der brukeren skulle fylle ut en rekke informasjon
+                        så kunne dette vært aktuelt. Tatt dette i betraktning kunne jeg ha implementert at overskriften til nettsiden fulgte med når man scrollet nedover. Dette hadde gjort brukeren mer oppmerksom og minnet
+                        brukeren på hva han eller hun leste om underveis. Implementasjon av "breadcrumbs", en tekstnavigasjon, kunne også vært aktuelt dersom jeg hadde veldig mye innhold på innholdssidene mine.</p>
+                    <p>Et annet viktig punkt er å følge standarder og være konsekvent. Nettsiden min er ikke unik designmessig og har en ganske vanlig oppbygging. Dette gjør at brukeren ikke får noen overraskelser på nettsiden min.
+                        Nettsiden har en header, en meny på logisk sted, innholdet ligger logisk tilgjengelig og med en avsluttende footer. Dette øker sjansen for at brukeren får med seg det som er på nettsiden din.
+                        Brukeren trenger ikke ta stilling til mange nye løsninger eller varianter som kan være til hinder for læring.</p>
+                    <p>En annen viktig tommelfingelregler er å holde seg unna feil på nettsiden sin. Fornuftig og validert kode sammen med ulike analyseverktøy er til hjelp for å forhindre 
+                        feil på nettsiden. Videre er det viktig å ha fokus på det essensielle innholdet. I webutvikling kan det være fristende å pynte mye på nettsiden sin. Men, her er det viktig å ha hodet på rett sted.
+                        Dersom man legger til unødvendig mye design kan dette ta fokus bort fra innholdet på nettsiden din. Dermed er det viktig å ha fokus på å tenke innhold når man designer en nettside. På min nettside har jeg
+                        ikke implementert mye farger og distraksjoner. Dette kan være en fordel da det ikke får så mye fokus fra brukeren. Men, på en annen side kan det estetiske fremstå kjedelig for noen brukere. 
+                    </p>
+                    <p>Nettsiden min treffer på en del av punktene til Jakob Nielsen. Samtidig er det endringer jeg kunne gjort eller ha tenkt på i forkant av opparbeidelsen av nettsiden for å gjøre siden enda bedre.
+                        Jeg ser nytteverdien med å tenke på disse tommelfingerreglene når man jobber med webutvikling.
+                    </p>
+                    <ul class="article-sources">
+                        <li><b>Kilder:</b></li>
+                        <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
+                    </ul>
+                    <p><b>Hvis du er nysgjerrig og lurer på om hvorvidt nettsiden min oppfyller kravene i WCAG 2.0 kan du trykke <a href="text/WCAG-sjekkliste-mittnettsted.pdf" target="_blank" tabindex="11">HER</a></b></p>
+                </article>
+            </main>
+            <!--Her slutter hovedinnholdet på siden-->
+            <footer tabindex="12">
+                <h4>Kontaktinformasjon</h4>
+                <ul>
+                    <li>Høgskolen i Østfold</li>
+                    <li>B R A veien 4 </li>
+                    <li>1757 Halden</li>
+                    <li>69608000</li>
+                    <li><a href="#" tabindex="13">postmottak@hiof.no</a></li>
+                </ul>
+            </footer>
+        </div>
+    </body>
+</html>
