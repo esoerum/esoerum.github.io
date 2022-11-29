@@ -3,14 +3,13 @@
 html {
     font-size: calc(1em + 1vw);
 }
-
 /*Her kommer CSS-egenskapene som er egnet for mobil-versjon/skjermer under 768px*/
 
+/*Tabell-css*/
 .table-container {
 	border: 1px solid gray;
 	display: grid;
 	grid-template-columns: 1fr;
-	padding: 20px;
     background-color: #f9f9f9;
 }
 
@@ -33,35 +32,33 @@ html {
 	display: grid;
 	grid-template-rows: 1fr 1fr;
 }
+
 .content-four-column-table {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 .group1 {
 	background-color: #9EE5A1;
     border: 1px solid grey;
-
 }
 
 .group2 {
     background-color: #FFC7C0;
     border: 1px solid grey;
-    
 }
 
 .group3 {
     background-color: #FECF48;
     border: 1px solid grey;
-    
 }
+/*Tabell-css slutt*/
 body {
     width: 95%;
     margin: 0 auto;
     font-family: 'Open Sans';
     font-weight: 400;
 }
-
+/*Hoved-container nettside*/
 .main-container {
     width: 100%;
     display: grid;
@@ -71,7 +68,7 @@ body {
     grid-template-columns: 1fr;
     font-size: 0.7rem;
 }
-
+/*Header + logo*/
 header {
     grid-area: header;
     display:flex;
@@ -90,6 +87,8 @@ header {
     margin-top: 0;
     margin-left: 0;
 }
+/*Header + logo slutt*/
+/*Hamburgermeny på mobil*/
 nav ul {
     display: none;
 }
@@ -127,7 +126,7 @@ nav ul {
 .active {
   color: white;
 }
-
+/*Hamburgermeny mobil slutt*/
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -157,7 +156,6 @@ h3 {
     transition: all 0.5s;
     cursor: pointer;
     margin: 2.5px;
-    /*Slenge på en transitiion 0.2?? Sjekk opp*/
    }
 /*Lånt deler og hentet inspirasjon fra: https://uiverse.io/detail/NorthFishHasNa/soft-turtle-49 by @NorthFishHasNa*/
 
@@ -200,7 +198,15 @@ main {
     font-style: normal;
     border-top: 1px solid #3d405b;
     margin-bottom: 3rem;
+}
+.article-sources ul {
+    padding: 0;
     list-style-type: none;
+}
+
+.article-sources ul li {
+    word-break: break-all;
+    padding-bottom: .5rem;
 }
 
 #intro {
@@ -219,27 +225,41 @@ article {
     max-width: 250px;
     max-height: 250px;
 }
+/*Analyse-siden*/
 .analyse-images-container {
-    background-color: #fa0909;
+    width:auto;
+    background-color: #f9f9f9;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap:1em;
     padding:1rem;
-    
 }
 .analyse-images {
-    max-width:75%;
-    max-height:65%;
+    width:100%;
+    max-width:300px;
     
 }
-/*CSS tilhørende kontaktskjema - kontakt oss*/
+/*Analyse-siden slutt*/
+/* Share-buttons*/
+.share-buttons {
+    display:flex;
+    flex-direction:column;
+    margin-left: 1em;
+}
+.pin-it-button {
+    margin:5px;
+}
+.fb-share-button {
+    margin-bottom:5px;
+}
+.twitter-share-button {
+    margin-bottom:5px;
+}
+/*Share-buttons slutt*/
+/*Kontakt oss-siden*/
 #contact-info-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    width: auto;
     display:flex;
     flex-direction: column;
     flex-wrap:wrap;
@@ -248,35 +268,40 @@ article {
 #contact-info {
     display:flex;
     flex-direction: column;
-    margin-bottom: 1.5rem;
-    
+
 }
 #contact-form {
     display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #f9f9f9;
+    border-radius: 1rem;
+    
 }
 #contact-form ul {
     list-style:none;
     color:black;
-    max-width: 400px;
+    max-width: 200px;
+    padding-left:0;
 }
 #contact-form label {
     display:block;
     font-weight: bold;
-    margin:0 0 3px 0;
+    
+    
 }
 #contact-form-text-box {
-    width:400px;
-    height: 300px;
+    width:200px;
+    height: 200px;
 }
+
 #contact-map {
-    display:grid;
-    justify-content: baseline;
+    width:300px;
+    border-radius:1rem;
+    
 }
-/*CSS tilhørende kontaktskjema - kontakt oss slutt*/
+/*Kontakt oss-siden slutt*/
 footer {
     grid-area: footer;
     font-size: 0.5rem;
@@ -314,27 +339,69 @@ footer h4 {
 .item-title {
 	font-size: 18px;
 }
+/*Responsiv tabell - tablets slutt*/
+/*Hamburgermeny-tablets*/
+nav ul {
+    display: none;
+}
+
+.drop-down-meny {
+    overflow: hidden;
+    background-color: #d6d7d9;
+    position: absolute;
+    display: block;
+    right: 40px;
+    top: 20px;
+    border-radius: 0.7rem;
+  }
+
+.drop-down-meny #links {
+    display: none;
+  }
+
+.drop-down-meny:hover #links {
+    display: block;
+}
+
+.drop-down-meny a {
+    color: #212121;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+.drop-down-meny a:hover {
+    background-color: white;
+  }
+/*Hamburgermeny-tablets slutt*/
+/*Analyse-siden*/  
+.analyse-images {
+    width:32%;
+}
 .analyse-images-container {
-    background-color: #6519f1;
+    background-color: #f9f9f9;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 1rem;
     
 }
-.analyse-images {
-    width:32%;
+#contact-form ul {
+    list-style:none;
+    color:black;
+    max-width: 500px;
 }
-	/* body {
-    width: 90%;
-    margin: 0 auto;
+#contact-form-text-box {
+    width:400px;
+    height: 400px;
 }
-.drop-down-meny {
-    display: none;
-} */
+#contact-map {
+    width:450px;
+    border-radius:1rem;
+    
 }
-/* TO BE CONTINUED DELEKSAMEN 4! */
-
+}
 
 /*Her kommer CSS-egenskapene som er egnet for desktop/skjerm med oppløsning høyere enn 1025px*/
 @media only screen and (min-width: 1025px) {
@@ -409,14 +476,15 @@ grid-template-columns: 1fr 1fr;
     background-color: #FECF48;
     border: 1px solid black;
 }
+/*Responsiv tabell - desktop slutt */
 body {
         width: 85%;
         margin: 0 auto;
         font-family: 'Open Sans';
         font-weight: 400;
     }
-/*Responsiv tabell - desktop slutt */
-/*Main-container-mal*/
+
+/*Hovedcontainer - nettside*/
 .main-container {
     display: grid;
     grid-template-areas: "header header header"
@@ -428,7 +496,6 @@ body {
     line-height: 150%;
     min-height: 100vh;
 }
-/*Main-container-mal*/
 /*Header + logo*/
 header {
     grid-area: header;
@@ -449,7 +516,7 @@ header {
     margin-left: 0;
 }
 /*Header + logo slutt*/
-/*Generell overskrifter*/
+/*Generelle overskrifter*/
 h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -464,8 +531,8 @@ h2 {
 h3 {
     font-family: 'Poppins', sans-serif;
 }
-/*Generell overskrifter slutt*/
-/*Navigasjon css*/
+/*Generelle overskrifter slutt*/
+/*Navigasjonsmeny desktop*/
 nav {
     display: flex;
     flex-direction: row;
@@ -501,7 +568,7 @@ a:hover {
 .drop-down-meny {
     display: none;
 }
-/*Navigasjon css slutt*/
+/*Navigasjonsmeny desktop slutt*/
 main {
     grid-area: main;
     display:flex;
@@ -536,12 +603,11 @@ main {
 }
 
 .article-sources {
-    font-size: 0.7em;
+    font-size: 1em;
+    padding: 1rem;
     font-style: normal;
     border-top: 1px solid #3d405b;
     margin-bottom: 3rem;
-    padding: 1rem;
-    list-style-type: none;
 }
 
 #table-description {
@@ -591,7 +657,7 @@ article:last-child {
     width: 100%;
     height: 400px;
 }
-/*CSS tilhørende kontaktskjema - kontakt oss*/
+/*Kontakt-side*/
 #contact-info-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -613,8 +679,12 @@ article:last-child {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items:flex-start;
     background-color: #f9f9f9;
+    border-radius: 1rem;
+    padding:1rem;
+    
 }
 #contact-form ul {
     list-style:none;
@@ -625,17 +695,19 @@ article:last-child {
     display:block;
     font-weight: bold;
     margin:0 0 3px 0;
+    
 }
 #contact-form-text-box {
-    width:400px;
+    width:300px;
     height: 300px;
 }
-#contact-map {
-    display:grid;
-    justify-content: baseline;
-}
-/*CSS tilhørende kontaktskjema - kontakt oss slutt*/
 
+#contact-map {
+    border-radius:1rem;
+    width:600px;
+    height:600px;
+}
+/*Kontakt-side slutt*/
 /*Analyse-siden*/
 .analyse-images-container {
     background-color: #f9f9f9;
@@ -645,9 +717,11 @@ article:last-child {
     padding:1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 0.5px solid grey;/*Borders eller ikke?*/
 }
+
 .analyse-images {
+    width:30%;
+    max-width:500px;
     height:auto;
 }
 /*Analyse-siden slutt*/
@@ -665,6 +739,7 @@ article:last-child {
 }
 .twitter-share-button {
     margin-bottom:10px;
+    margin-top:10px;
 }
 /*Share-buttons slutt*/
 footer {

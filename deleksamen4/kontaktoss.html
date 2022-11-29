@@ -63,7 +63,7 @@
                     </div>
                 <a href="index.html" class="icon" aria-label="meny-knapp" onclick="myFunction()">
                     <i class="fa fa-bars"></i></a>
-            </div>
+                </div>
             <!--Slutt hamburgermeny-->
             </header>
             <!--Her starter hovedinnholdet på siden-->
@@ -76,6 +76,7 @@
                        Ingen dumme spørsmål! Du kan også benytte deg av kartet under her for å finne veien frem til oss.
                     </p>
                 </article>
+                <!--Kontaktinformasjon-->
                 <ul class="fa-ul" id="contact-info" tabindex="8">
                     <li><span class="fa-li"><i class="fa-solid fa-house"></i></span>Høgskolen i Østfold</li>
                     <li><span class="fa-li"><i class="fa-solid fa-map-location"></i></span>B R A veien 4 </li>
@@ -83,6 +84,7 @@
                     <li><span class="fa-li"><i class="fa-solid fa-phone-volume"></i></span>69608000</li>
                     <li><span class="fa-li"><i class="fa-solid fa-square-envelope"></i></span><a href="#">postmottak@hiof.no</a></li>
                 </ul>
+                <!--Kontakt oss-skjema-->
                 <div id="contact-form">
                 <form>
                     <ul>
@@ -103,14 +105,28 @@
                         <li><textarea placeholder="Skriv her.." id="contact-form-text-box" tabindex="12"></textarea></li>
 
                         <li><input type="submit" value="Send inn" tabindex="13"></li>
-                        
-                        
                     </ul>
                 </form>
                 <!--Kart over bedriften-->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882761208053!2d11.35061461618698!3d59.12925023409059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1667990614403!5m2!1sno!2sno" 
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="contact-map" tabindex="14"></iframe>
+                height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="contact-map" tabindex="14"></iframe>
                 <!--iFrame hentet fra Google-->
+                </div>
+                 <!--Share-buttons-->
+                <div class="share-buttons">
+                    <!--Twitter-->
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
+                    <!--Hentet fra: https://publish.twitter.com/?buttonType=TweetButton&widget=Button-->
+                    <!--Facebook-->
+                    <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="I6N1RMWC"></script>
+                    <div class="fb-share-button" data-href="index.html" data-layout="button_count" 
+                    data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
+                    class="fb-xfbml-parse-ignore">Del</a></div>
+                    <!--Pinterest-->
+                    <a href="//www.pinterest.com/pin/create/button/" class="pin-it-button"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin it"></a>
+                    <!--Hentet fra: https://w3bits.com/pinterest-pin-it-button/-->
+                </div>
             </main>
             <!--Her slutter hovedinnholdet på siden-->
             <footer tabindex="15">
@@ -124,5 +140,6 @@
                 </ul>
             </footer>
         </div>
+        <script src="scripts/hamburgermeny.js"></script>
     </body>
 </html>

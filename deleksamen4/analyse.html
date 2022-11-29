@@ -114,7 +114,7 @@
                     </div>
                     <div class="analyse-images-container">
                         <img src="images/analysedokumentasjon/empty-link-documentation.PNG" class="analyse-images" alt="Bilde av kodeimplementasjon av 'aria-label'">
-                        <p><i>I oppsummeringen over har feilmeldingen forsvunnet. Dette er på grunn av implementeringen av "aria-label" i linken over.</i></p>
+                        <p><i>I oppsummeringen over har feilmeldingen forsvunnet fra analysen. Dette er på grunn av implementeringen av "aria-label" i linken over.</i></p>
                     </div>
                     <h3 class="subpage-h3">Lighthouse</h3>
                     <p>Videre i analysen brukte jeg<span lang="en">"Lighthouse" i Google Chrome</span> for å teste ytterligere rundt tilgjengeligheten på siden min.
@@ -131,7 +131,7 @@
                     </div>
                     <div class="analyse-images-container">
                         <img src="images/analysedokumentasjon/lighthouse-mobile-after-implementation.PNG" class="analyse-images" alt="Bilde en av analyseresultat fra 'Lighthouse' av mobil-siden min etter implementasjon.">
-                        <p><i>Bildet over viser resultatet med "Lighthouse" på mobil-versjonen av siden min etter implementasjonen av "aria-label". </i></p>
+                        <p><i>Bildet over viser resultatet med "Lighthouse" på mobil-versjonen av siden min etter implementasjonen av "aria-label". Implementeringen fjernet feilmeldingen.</i></p>
                     </div>
                     <!--Slutt analyse av UU-->
                     <!--Analyse av SEO-->
@@ -176,10 +176,11 @@
                        fra søkemotorene vil være en kontinuerlig jobb.
                     </p>   
                     <div class="analyse-images-container">
-                        <img src="images/analysedokumentasjon/lighthouse-seo-desktop-finish.PNG" alt="Bilde av endelig analyseresultat av SEO på desktop-delen av siden. 100 i score.">
-                        <img src="images/analysedokumentasjon/lighthouse-seo-mobile-finish.PNG" alt="Bilde av endeling analysresultat av SEO på mobil-delen av siden. 100 i score">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-desktop-finish.PNG" class="analyse-images" alt="Bilde av endelig analyseresultat av SEO på desktop-delen av siden. 100 i score.">
+                        <img src="images/analysedokumentasjon/lighthouse-seo-mobile-finish.PNG" class="analyse-images" alt="Bilde av endeling analysresultat av SEO på mobil-delen av siden. 100 i score">
                         <p><i>Bildet til venstre viser endelig testresultat på desktop-testen og bildet til høyre viser endelig testresultat på mobil-testen av nettsiden.</i></p>
                     </div>
+                    
                     <!--Slutt analyse av SEO-->
                     
                 </article>
@@ -213,7 +214,7 @@
                                         <li><span lang="en">"Empty link error"</span> skyldtes at linken ikke hadde noe visuell tekst for opplesningverktøy eller lignende</li>
                                         <li>Headeren hadde for liten kontrast og det ville bli vanskelig å få med seg innholdet for mennesker med synsforstyrrelser</li>
                                         <li>Footeren hadde for liten kontrast og det ville bli vanskelig å få med seg innholdet for mennesker med synsforstyrrelser</li>
-                                        <li><span lang="en">"Links do not have a discernible name" skyldtes at linken ikke hadde noen visuell tekst for opplesningverktøy eller liknende</li>
+                                        <li><span lang="en">"Links do not have a discernible name"</span> skyldtes at linken ikke hadde noen visuell tekst for opplesningverktøy eller liknende</li>
                                     </ul>
                                 </div>
                                 <div class="group1">
@@ -264,8 +265,6 @@
                     <!--Heuristisk evaluering-->
                 <article tabindex="10">    
                     <h3 class="subpage-h3">Heuristisk evaluering</h3>
-                    <!--<img src="https://miro.medium.com/max/720/1*ML_-bqBYywTISthT9gR6Yg.webp" alt="Illustrasjon av mann med to snakkebobler">
-                    Bildet lånt fra https://medium.muz.li/the-ultimate-guide-difference-between-usability-and-user-experience-afb757ded1c4-->
                     <p>I denne delen av analysen skal jeg foreta en heuristisk evaluering av siden min. Dette er basert på Jakob Nielsen's ti generelle prinsipper for interaktivt design.
                         Disse prinsippene blir ofte regnet som tommelfingelregler og er greit å ha i bakhodet når man jobber med design av nettsider.</p>
                     <p>Et av punktene i denne vurderingen
@@ -291,10 +290,27 @@
                     <p>Nettsiden min treffer på en del av punktene til Jakob Nielsen. Samtidig er det endringer jeg kunne gjort eller ha tenkt på i forkant av opparbeidelsen av nettsiden for å gjøre siden enda bedre.
                         Jeg ser nytteverdien med å tenke på disse tommelfingerreglene når man jobber med webutvikling.
                     </p>
-                    <ul class="article-sources">
+                    <div class="article-sources">
+                    <ul>
                         <li><b>Kilder:</b></li>
                         <li><a href="https://www.nngroup.com/articles/ten-usability-heuristics/">https://www.nngroup.com/articles/ten-usability-heuristics/</a></li>
                     </ul>
+                    </div>
+                     <!--Share-buttons-->
+                    <div class="share-buttons">
+                        <!--Twitter-->
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js"></script>
+                        <!--Hentet fra: https://publish.twitter.com/?buttonType=TweetButton&widget=Button-->
+                        <!--Facebook-->
+                        <div id="fb-root"></div>
+                            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v15.0" nonce="I6N1RMWC"></script>
+                        <div class="fb-share-button" data-href="index.html" data-layout="button_count" 
+                        data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" 
+                        class="fb-xfbml-parse-ignore">Del</a></div>
+                        <!--Pinterest-->
+                        <a href="//www.pinterest.com/pin/create/button/" class="pin-it-button"><img src="//assets.pinterest.com/images/pidgets/pin_it_button.png" alt="Pin it"></a>
+                        <!--Hentet fra: https://w3bits.com/pinterest-pin-it-button/-->
+                    </div>
                     <p><b>Hvis du er nysgjerrig og lurer på om hvorvidt nettsiden min oppfyller kravene i WCAG 2.0 kan du trykke <a href="text/WCAG-sjekkliste-mittnettsted.pdf" target="_blank" tabindex="11">HER</a></b></p>
                 </article>
             </main>
@@ -309,6 +325,7 @@
                     <li><a href="#" tabindex="13">postmottak@hiof.no</a></li>
                 </ul>
             </footer>
+            <script src="scripts/hamburgermeny.js"></script>
         </div>
     </body>
 </html>
