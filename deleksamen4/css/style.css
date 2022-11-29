@@ -7,6 +7,7 @@ html {
 
 /*Tabell-css*/
 .table-container {
+    padding:5px;
 	border: 1px solid gray;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -244,18 +245,47 @@ article {
 /* Share-buttons*/
 .share-buttons {
     display:flex;
-    flex-direction:column;
-    margin-left: 1em;
+    flex-direction:row;
 }
-.pin-it-button {
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
     margin:5px;
-}
-.fb-share-button {
-    margin-bottom:5px;
-}
-.twitter-share-button {
-    margin-bottom:5px;
-}
+    border-radius:1rem;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px;
+    border-radius:1rem;
+  }
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px;
+    border-radius:1rem;
+  }
 /*Share-buttons slutt*/
 /*Kontakt oss-siden*/
 #contact-info-container {
@@ -407,7 +437,9 @@ nav ul {
 @media only screen and (min-width: 1025px) {
 
 /*Responsiv tabell - desktop*/
-
+.table-container {
+    padding:20px;
+}
 #header-uu {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -728,19 +760,45 @@ article:last-child {
 /* Share-buttons*/
 .share-buttons {
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     margin-left: 1em;
 }
-.pin-it-button {
-    margin:10px;
+
+.fa:hover {
+    opacity: 0.7;
 }
-.fb-share-button {
-    margin-bottom:10px;
-}
-.twitter-share-button {
-    margin-bottom:10px;
-    margin-top:10px;
-}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
 /*Share-buttons slutt*/
 footer {
     border-radius: 0.5rem;
